@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "coords": [36.573408656255836, 29.149161727337596],
+    "title": "CC's Butik Hotel",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipMx3kEaPFc4lNM3rWY1Mjhxinzn7S47RWR9oTjC=w408-h306-k-no"
+    }
+  },
+  {
+    "id": 2,
+    "coords": [36.494389549277926, 29.136406125609106],
+    "title": "Onur Motel Faralya",
+    "img": {
+      "src": "https://lh3.googleusercontent.com/gps-proxy/AMy85WLvmkZ9DFPtKmuRC0vJX8WJXiFkA_2ZWmAsO1PmFu83ZWyVIqc9a3njP7RZTOZGKLPaHFO1YOr2R0Eybz_6RAvSmvguGGT82UnX_tCvT__119E4lHReczVfOwwvk_P3SU-cwpv3MPse4deLme9pIkXdo8F3vBAaa3mNT6lrnAIzIwjil_oGLYW9=w427-h240-k-no"
+    }
+  },
+  {
+    "id": 3,
+    "coords": [36.467669105434844, 29.12367862560828],
+    "title": "Kabak Mamma's",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipOsA-csf9Ek2RcAomDOvUe-VwvIxPwJSucNbjq2=w408-h306-k-no"
+    }
+  },
+  {
+    "id": 4,
+    "coords": [36.44638248087902, 29.144780356289484],
+    "title": "Likya Kamp Alınca",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipPzNexoauzBiXYAsK19DW1ApzobwjK7gilyxH6Y=w408-h544-k-no"
+    }
+  },
+  {
+    "id": 5,
+    "coords": [36.38098614529744, 29.172029466278655],
+    "title": "Fatma Pansiyon",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipMZ5s-l_x2rByb7BGbTpxj6xwHghAp_1NjQEwDv=w408-h306-k-no"
+    }
+  },
+  {
+    "id": 6,
+    "coords": [36.334252229542976, 29.202500891333546],
+    "title": "Likya Park Orman",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipMCTGy5RKliiuOqwK5PYXLiyq2bL8sY7ZYOHJGZ=w408-h453-k-no"
+    }
+  },
+  {
+    "id": 7,
+    "coords": [36.33189591952291, 29.226552654438866],
+    "title": "Likya Garden Life",
+    "img": {
+      "src": "https://lh5.googleusercontent.com/p/AF1QipOhUM6PEWGGntS78j89zilJ5jILJome02Q78O_b=w408-h272-k-no"
+    }
+  },
+  {
+    "id": 8,
+    "coords": [36.34313658104112, 29.295946820246307],
+    "title": "Letoon Antique Hotel",
+    "img": {
+      "src": "https://lh3.googleusercontent.com/gps-proxy/AMy85WIazGT45evhBzXEUjOzfNw-1nMusoN2V30vU7BDXjYwlAYVgOsRILt4X_OdnEB0WqZnlNq7tf12mWMTMYlEYz1QvCD6pyv5LCK9crdru7kICxDOrJBXgeg5AZdK9dvdnQMu15_SF_M123OOKoNg76qeIyd3HJf7ZQhxPkmgFQl8J9V73HMMk7K2=w408-h306-k-no"
+    }
+  }
+]
