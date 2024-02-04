@@ -204,3 +204,21 @@ svg:not(:root) {
     box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
   }
 }
+
+
+
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  margin:24px
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
