@@ -46,7 +46,7 @@ let groupBounds;
 let latlngs = [];
 fetchData("./assets/all.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -55,15 +55,15 @@ fetchData("./assets/all.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "black",
-      weight: 2,
+      color: "grey",
+      weight: 3,
     }).addTo(map);
 
     return data;
   })
 fetchData("./assets/day8.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -80,7 +80,7 @@ fetchData("./assets/day8.json")
   })
 fetchData("./assets/day7.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -97,7 +97,7 @@ fetchData("./assets/day7.json")
   })
 fetchData("./assets/day6.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -106,7 +106,7 @@ fetchData("./assets/day6.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "black",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -114,7 +114,7 @@ fetchData("./assets/day6.json")
   })
 fetchData("./assets/day5.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -123,7 +123,7 @@ fetchData("./assets/day5.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "orange",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -131,7 +131,7 @@ fetchData("./assets/day5.json")
   })
 fetchData("./assets/day4.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -140,7 +140,7 @@ fetchData("./assets/day4.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "purple",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -148,7 +148,7 @@ fetchData("./assets/day4.json")
   })
 fetchData("./assets/day3.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -157,7 +157,7 @@ fetchData("./assets/day3.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "cyan",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -216,7 +216,7 @@ fetchData("./assets/titles.json")
   });
 fetchData("./assets/day2.json")
   .then((data) => {
-    console.log(data)
+
     // data.map((marker) => {
 
     //   // latlngs.push(marker.coords);
@@ -225,7 +225,7 @@ fetchData("./assets/day2.json")
 
     // add polyline to map
     L.polyline(data, {
-      color: "brown",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -236,16 +236,9 @@ fetchData("./assets/day2.json")
 // function to add markers to map
 fetchData("./assets/day1.json")
   .then((data) => {
-    console.log(data)
-    // data.map((marker) => {
 
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "red",
+      color: "green",
       weight: 5,
     }).addTo(map);
 
@@ -325,7 +318,7 @@ function closeSidebar() {
 // add content to sidebar
 
 function addContentToSidebar(marker) {
-  const { id, title, small, description, img, coords } = marker;
+  const { id, title, small, distance, img, coords, day, totaltime, walktime, description } = marker;
   const smallInfo = small !== undefined ? `<small>${small}</small>` : "";
 
   // create sidebar content
@@ -336,7 +329,12 @@ function addContentToSidebar(marker) {
         <div class="info-content">
           <img class="img-zoom" src="${img.src}" alt="${img.alt}">
           ${smallInfo}
+          <h2>${day}. Gün</h2>
           <div class="info-description">${description}</div>
+          <div class="info-description">Tamamlanan Yürüyüş : ${distance}</div>
+          <div class="info-description">Toplam Zaman : ${totaltime}</div>
+          <div class="info-description">Hareket Edilen Zaman : ${walktime}</div>
+
         </div>
       </article>
     `;

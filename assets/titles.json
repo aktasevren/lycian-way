@@ -1,6 +1,11 @@
 [
   {
     "id": 1,
+    "day": "1",
+    "totaltime": "8 saat 20 dakika",
+    "walktime": "3 saat 46 dakika",
+    "distance": "15.7 km",
+    "description" : "Likya Yolu başlangıç noktasından başlanıldı, Hisar'da bitirildi.",
     "coords": [36.573408656255836, 29.149161727337596],
     "title": "CC's Butik Hotel",
     "img": {
@@ -9,6 +14,11 @@
   },
   {
     "id": 2,
+    "day": "2",
+    "totaltime": "2 saat 51 dakika",
+    "walktime": "1 saat 11 dakika",
+    "distance": "5 km",
+    "description" : "Hisar'dan çıkış yapıldı, Kabak'ta bitirildi.",
     "coords": [36.494389549277926, 29.136406125609106],
     "title": "Onur Motel Faralya",
     "img": {
@@ -17,6 +27,11 @@
   },
   {
     "id": 3,
+    "day": "3",
+    "totaltime": "6 saat 59 dakika",
+    "walktime": "2 saat 1 dakika",
+    "distance": "8.81 km",
+    "description" : "Kabak'tan çıkış yapıldı, Alınca'da bitirildi. İstanbul'a dönüş.",
     "coords": [36.467669105434844, 29.12367862560828],
     "title": "Kabak Mamma's",
     "img": {
@@ -25,6 +40,11 @@
   },
   {
     "id": 4,
+    "day": "4",
+    "totaltime": "7 saat 53 dakika",
+    "walktime": "4 saat 20 dakika",
+    "distance": "13.44 km",
+    "description" : "Gece İstanbul'dan gelindi.Alınca'dan başlandı,Bel'de bitirildi.",
     "coords": [36.44638248087902, 29.144780356289484],
     "title": "Likya Kamp Alınca",
     "img": {
@@ -33,6 +53,11 @@
   },
   {
     "id": 5,
+    "day": "5",
+    "totaltime": "5 saat 17 dakika",
+    "walktime": "2 saat 37 dakika",
+    "distance": "8.15 km",
+    "description" : "Bel'den başlandı, Gavurağılı'da bitirildi.",
     "coords": [36.38098614529744, 29.172029466278655],
     "title": "Fatma Pansiyon",
     "img": {
@@ -41,6 +66,11 @@
   },
   {
     "id": 6,
+    "day": "6",
+    "totaltime": "3 saat 59 dakika",
+    "walktime": "2 saat 10 dakika",
+    "distance": "6.57 km",
+    "description" : "Gavurağılı'dan başlandı, Karadere'de bitirildi",
     "coords": [36.334252229542976, 29.202500891333546],
     "title": "Likya Park Orman",
     "img": {
@@ -50,7 +80,9 @@
   },
   {
     "id": 7,
+    "day": "7",
     "coords": [36.33189591952291, 29.226552654438866],
+    "description" : "Karadere'den başlandı, Antik kentler gezildi.",
     "title": "Likya Garden Life",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipOhUM6PEWGGntS78j89zilJ5jILJome02Q78O_b=w408-h272-k-no"
@@ -58,7 +90,9 @@
   },
   {
     "id": 8,
+    "day": "8",
     "coords": [36.34313658104112, 29.295946820246307],
+    "description" : "İstanbul'a dönüş.",
     "title": "Letoon Antique Hotel",
     "img": {
       "src": "https://lh3.googleusercontent.com/gps-proxy/AMy85WIazGT45evhBzXEUjOzfNw-1nMusoN2V30vU7BDXjYwlAYVgOsRILt4X_OdnEB0WqZnlNq7tf12mWMTMYlEYz1QvCD6pyv5LCK9crdru7kICxDOrJBXgeg5AZdK9dvdnQMu15_SF_M123OOKoNg76qeIyd3HJf7ZQhxPkmgFQl8J9V73HMMk7K2=w408-h306-k-no"
