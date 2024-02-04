@@ -44,24 +44,6 @@ const buttonClose = document.querySelector(".close-button");
 let featureGroups = [];
 let groupBounds;
 let latlngs = [];
-fetchData("./assets/titles.json")
-  .then((data) => {
-    // create markers width "marker-options-id"
-    data.map((marker) => {
-      featureGroups.push(
-        L.marker(marker.coords, {
-          icon: L.divIcon({
-            className: "leaflet-marker-icon",
-            html: `${marker.id}`,
-            iconSize: L.point(30, 30),
-            popupAnchor: [3, -5],
-          }),
-          "marker-options-id": marker.id,
-        })
-      );
-    });
-    return data;
-  })
 fetchData("./assets/all.json")
   .then((data) => {
     console.log(data)
@@ -198,13 +180,6 @@ fetchData("./assets/titles.json")
         })
       );
     });
-
-    // add polyline to map
-    L.polyline(latlngs, {
-      color: "#ff3939",
-      weight: 2,
-    }).addTo(map);
-
     return data;
   })
   .then((data) => {
