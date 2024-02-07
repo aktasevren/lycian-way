@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lycian Way</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    />
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
 
-  <body>
-    <div>
-      <h1>Likya Yolu 92 km / 486.89 km</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lycian Way</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/leaflet.legend.css" />
+  <script type="text/javascript" src="./assets/leaflet.legend.js"></script>
 
-      <div id="myProgress">
-        <div id="myBar">18.9%</div>
-      </div>
+</head>
+
+<body>
+  <div id="myProgress">
+    <h2 class="header-title">Likya Yolu</h2>
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:19%">
+      Tamamlanan 92 KM
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      <symbol id="icon-clear" viewBox="0 0 24 24">
-        <path
-          d="M18.984 6.422 13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"
-        />
-      </symbol>
-    </svg>
-
-    <div class="sidebar">
-      <button aria-label="close sidebar" type="button" class="close-button">
-        <svg>
-          <use xlink:href="#icon-clear" />
-        </svg>
-      </button>
+    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:81%">
+      Kalan 395 KM
     </div>
-    <div id="map"></div>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="icon-clear" viewBox="0 0 24 24">
+      <path
+        d="M18.984 6.422 13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z" />
+    </symbol>
+  </svg>
+
+  <div class="sidebar">
+    <button aria-label="close sidebar" type="button" class="close-button">
+      <svg>
+        <use xlink:href="#icon-clear" />
+      </svg>
+    </button>
+  </div>
+  <div id="map"></div>
+  <script src="./script.js"></script>
+
+</body>
+
 </html>

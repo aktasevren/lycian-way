@@ -8,11 +8,8 @@ let config = {
   minZoom: 1,
   maxZoom: 18,
 };
-// magnification with which the map will start
-const zoom = 9;
-// co-ordinates
-
-const lat = 36.80;
+const zoom = 7;
+const lat = 32.80;
 const lng = 30.40;
 
 // calling map
@@ -20,7 +17,7 @@ const map = L.map("map", config).setView([lat, lng], zoom);
 
 // Used to load and display tile layers on the map
 // Most tile servers require attribution, which you can set under `Layer`
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png", {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
@@ -37,6 +34,24 @@ async function fetchData(url) {
   }
 }
 
+/*Legend specific*/
+var legend = L.control({ position: "bottomleft" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Legend</h4>";
+  div.innerHTML += '<span><b>B </b></span><span>Başlangıç / Bitiş</span><br>';
+  div.innerHTML += '<hr class="new5"><span>Yürünen Yollar</span><br>';
+  div.innerHTML += '<hr class="new4"><span>Yürünecek Yollar</span><br>';
+
+  
+  
+
+  return div;
+};
+
+legend.addTo(map);
+
 // --------------------------------------------------
 // button to close sidebar
 const buttonClose = document.querySelector(".close-button");
@@ -44,129 +59,91 @@ const buttonClose = document.querySelector(".close-button");
 let featureGroups = [];
 let groupBounds;
 let latlngs = [];
+
+const LeafIcon = L.Icon.extend({
+  options: {
+    iconSize:     [24, 24],
+  }
+});
+
+
+const antinKent = new LeafIcon({iconUrl: './assets/ancient.png'});
+const plaj = new LeafIcon({iconUrl: './assets/beach.png'});
+
+const xanthos = L.marker([36.357056960702074, 29.318241969309476], {icon: antinKent}).bindPopup('Xanthos Antik Kenti').addTo(map);
+const letoon = L.marker([36.332108591674796, 29.289743654675846], {icon: antinKent}).bindPopup('Xanthos Antik Kenti').addTo(map);
+
+const kabak = L.marker([36.46122150548804, 29.125038539130568], {icon: plaj}).bindPopup('Kabak Koyu').addTo(map);
+
+
+
+
+
 fetchData("./assets/all.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "grey",
-      weight: 3,
+      color: "black",
+      weight: 5
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day8.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day7.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day6.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day5.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day4.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
+
 fetchData("./assets/day3.json")
   .then((data) => {
-
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
-
     return data;
   })
 
 fetchData("./assets/titles.json")
   .then((data) => {
-    // create markers width "marker-options-id"
     data.map((marker) => {
       featureGroups.push(
         L.marker(marker.coords, {
@@ -182,6 +159,7 @@ fetchData("./assets/titles.json")
     });
     return data;
   })
+
   .then((data) => {
     // create feature group
     // add markers to map
@@ -217,16 +195,9 @@ fetchData("./assets/titles.json")
 fetchData("./assets/day2.json")
   .then((data) => {
 
-    // data.map((marker) => {
-
-    //   // latlngs.push(marker.coords);
-    //   console.log((marker.coords))
-    // });
-
-    // add polyline to map
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
 
     return data;
@@ -238,8 +209,8 @@ fetchData("./assets/day1.json")
   .then((data) => {
 
     L.polyline(data, {
-      color: "green",
-      weight: 5,
+      color: "#0BDA51",
+      weight: 6,
     }).addTo(map);
 
     return data;
@@ -324,12 +295,12 @@ function addContentToSidebar(marker) {
   // create sidebar content
   const sidebarTemplate = `
       <article class="sidebar-content">
-        <h1>${title}</h1>
+        <h3>${title}</h3>
         <div class="marker-id">${id}</div>
         <div class="info-content">
           <img class="img-zoom" src="${img.src}" alt="${img.alt}">
           ${smallInfo}
-          <h2>${day}. Gün</h2>
+          <h3 style='margin:12px'>${day}</h3>
           <div class="info-description">${description}</div>
           <div class="info-description">Tamamlanan Yürüyüş : ${distance}</div>
           <div class="info-description">Toplam Zaman : ${totaltime}</div>
@@ -368,4 +339,7 @@ function boundsMap(coords) {
   map.fitBounds(bounds, {
     paddingTopLeft: [coords ? sidebar : 0, 10],
   });
+
+
+  
 }
