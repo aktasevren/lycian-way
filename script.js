@@ -49,6 +49,7 @@ const startIcon = L.Icon.extend({
 });
 const start = new startIcon({ iconUrl: './assets/icons/start.png' });
 
+const pydnai = L.marker([36.33391422017312, 29.231576038618954], { icon: antinKent }).bindPopup('Pydnai Antik Kenti').addTo(map);
 const xanthos = L.marker([36.357056960702074, 29.318241969309476], { icon: antinKent }).bindPopup('Xanthos Antik Kenti').addTo(map);
 const letoon = L.marker([36.332108591674796, 29.289743654675846], { icon: antinKent }).bindPopup('Xanthos Antik Kenti').addTo(map);
 const kabak = L.marker([36.46122150548804, 29.125038539130568], { icon: plaj }).bindPopup('Kabak Koyu').addTo(map);
@@ -65,7 +66,14 @@ fetchData("./assets/routes/all.json")
     }).addTo(map);
     return data;
   })
-
+  fetchData("./assets/routes/day9.json")
+  .then((data) => {
+    L.polyline(data, {
+      color: "#0BDA51",
+      weight: 6,
+    }).addTo(map);
+    return data;
+  })
 fetchData("./assets/routes/day8.json")
   .then((data) => {
     L.polyline(data, {
