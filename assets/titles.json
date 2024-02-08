@@ -5,12 +5,16 @@
     "totaltime": "Yürüyüş yapılmadı.",
     "walktime": "Yürüyüş yapılmadı.",
     "distance": "Yürüyüş yapılmadı.",
-    "description" : "Akşam Fethiye Ovacık'ta konakladık.",
-    "coords": [36.573408656255836, 29.149161727337596],
+    "description": "Akşam Fethiye Ovacık'ta konakladık.",
+    "coords": [
+      36.573408656255836,
+      29.149161727337596
+    ],
     "title": "CC's Butik Hotel",
     "img": {
-      "src": "https://lh5.googleusercontent.com/p/AF1QipMx3kEaPFc4lNM3rWY1Mjhxinzn7S47RWR9oTjC=w408-h306-k-no"
-    }
+      "src": "https://images.trvl-media.com/lodging/5000000/4730000/4724300/4724240/0c2f9285.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+    },
+    "type": "startPoint"
   },
   {
     "id": 1,
@@ -18,8 +22,11 @@
     "totaltime": "8 saat 20 dakika",
     "walktime": "3 saat 46 dakika",
     "distance": "15.7 km",
-    "description" : "Likya Yolu başlangıç noktasından başlanıldı, Hisar'da bitirildi. Faralya'da Onur Motelde Doğancan Bey'in misafirleri olarak konakladık.",
-    "coords": [36.494389549277926, 29.136406125609106],
+    "description": "Likya Yolu başlangıç noktasından başlanıldı, Hisar'da bitirildi. Faralya'da Onur Motelde Doğancan Bey'in misafirleri olarak konakladık.",
+    "coords": [
+      36.494389549277926,
+      29.136406125609106
+    ],
     "title": "Onur Motel Faralya",
     "img": {
       "src": "https://lh3.googleusercontent.com/proxy/a22QEMhIkvr_S3XNqjyduAm5VBgYwc9VlHcQxJT0GnvpgN456Iy99f1KSXOoLU7YsvB4wKQzA1yjiPJpta-gyD8x1cfNguqe3CXQ0IZ-duHyyh3c7vr-Yv-cGg8"
@@ -31,36 +38,44 @@
     "totaltime": "2 saat 61 dakika",
     "walktime": "1 saat 11 dakika",
     "distance": "5 km",
-    "description" : "Faralya'dan çıkış yaptık.Kabak Mamma'sta harika bir gece geçirdik. Umarız hizmette bir kusurumuz olmamıştır.",
-    "coords": [36.467669105434844, 29.12367862560828],
+    "description": "Faralya'dan çıkış yaptık.Kabak Mamma'sta harika bir gece geçirdik. Umarız hizmette bir kusurumuz olmamıştır.",
+    "coords": [
+      36.467669105434844,
+      29.12367862560828
+    ],
     "title": "Kabak Mamma's",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipOsA-csf9Ek2RcAomDOvUe-VwvIxPwJSucNbjq2=w408-h306-k-no"
     }
   },
   {
-    "id": "3/B",
+    "id": "3",
     "day": "Part1 / 3. Son Gün & Part2 / İlk Gece",
     "totaltime": "6 saat 59 dakika",
     "walktime": "2 saat 1 dakika",
     "distance": "8.81 km",
-    "description" : 
-    "Part1 / 3. Gün : Kabak'tan yürüyüşe başlayıp Alınca'da bitirdik.Bir gece burada konaklayıp ertesi gün İstanbul'a dönüş yaptık. <br><br> Part2 / İlk Gece : 2. Part yürüyüşümüzde tekrardan İstanbul'dan gelip burada konakladık.Ertesi gün Alınca'dan başlayıp Bel'de bitirdik.",
-    "coords": [36.44638248087902, 29.144780356289484],
+    "description": "Part1 / 3. Gün : Kabak'tan yürüyüşe başlayıp Alınca'da bitirdik.Bir gece burada konaklayıp ertesi gün İstanbul'a dönüş yaptık. <br><br> Part2 / İlk Gece : 2. Part yürüyüşümüzde tekrardan İstanbul'dan gelip burada konakladık.Ertesi gün Alınca'dan başlayıp Bel'de bitirdik.",
+    "coords": [
+      36.44638248087902,
+      29.144780356289484
+    ],
     "title": "Likya Kamp Alınca",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipPzNexoauzBiXYAsK19DW1ApzobwjK7gilyxH6Y=w408-h544-k-no"
-    }
+    },
+    "type":"finishPoint"
   },
-  
   {
     "id": 4,
     "day": "Part2 / 1.Gün",
     "totaltime": "7 saat 53 dakika",
     "walktime": "4 saat 20 dakika",
     "distance": "13.44 km",
-    "description" : "Alınca'dan başladık.Bel Fatma Pansiyon'da geceyi(!) geçirdik.",
-    "coords": [36.38098614529744, 29.172029466278655],
+    "description": "Alınca'dan başladık.Bel Fatma Pansiyon'da geceyi(!) geçirdik.",
+    "coords": [
+      36.38098614529744,
+      29.172029466278655
+    ],
     "title": "Fatma Pansiyon",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipMZ5s-l_x2rByb7BGbTpxj6xwHghAp_1NjQEwDv=w408-h306-k-no"
@@ -72,12 +87,14 @@
     "totaltime": "5 saat 17 dakika",
     "walktime": "2 saat 37 dakika",
     "distance": "8.15 km",
-    "description" : "Bel'den başladık.Gavurağılı'da tamamladık.",
-    "coords": [36.334252229542976, 29.202500891333546],
+    "description": "Bel'den başladık.Gavurağılı'da tamamladık.",
+    "coords": [
+      36.334252229542976,
+      29.202500891333546
+    ],
     "title": "Likya Park Orman",
     "img": {
-      "src": "https://lh5.googleusercontent.com/p/AF1QipMCTGy5RKliiuOqwK5PYXLiyq2bL8sY7ZYOHJGZ=w408-h453-k-no",
-      "alt": "deneme"
+      "src": "https://lh5.googleusercontent.com/p/AF1QipMCTGy5RKliiuOqwK5PYXLiyq2bL8sY7ZYOHJGZ=w408-h453-k-no"
     }
   },
   {
@@ -86,8 +103,11 @@
     "totaltime": "3 saat 59 dakika",
     "walktime": "2 saat 10 dakika",
     "distance": "6.57 km",
-    "coords": [36.33189591952291, 29.226552654438866],
-    "description" : "Gavurağılı'dan başladık, Karadere'de tamamladık.",
+    "coords": [
+      36.33189591952291,
+      29.226552654438866
+    ],
+    "description": "Gavurağılı'dan başladık, Karadere'de tamamladık.",
     "title": "Likya Garden Life",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipOhUM6PEWGGntS78j89zilJ5jILJome02Q78O_b=w408-h272-k-no"
@@ -99,8 +119,11 @@
     "totaltime": "Hesaplanacak",
     "walktime": "Hesaplanacak",
     "distance": "Hesaplanacak",
-    "coords": [36.34313658104112, 29.295946820246307],
-    "description" : "Sabah Karadere'den çıkış yaptık. Eşyalarımızı hotel'e bıraktık. Antik kentleri dolaştık. Ertesi sabah İstanbul'a dönüş yaptık.",
+    "coords": [
+      36.34313658104112,
+      29.295946820246307
+    ],
+    "description": "Sabah Karadere'den çıkış yaptık. Eşyalarımızı hotel'e bıraktık. Antik kentleri dolaştık. Ertesi sabah İstanbul'a dönüş yaptık.",
     "title": "Letoon Antique Hotel",
     "img": {
       "src": "https://d3m404n3ahyqc3.cloudfront.net/images/product/1/2/638113052111170000/2/1/25229/letoon_antique_hotel.jpg"
