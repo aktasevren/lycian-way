@@ -176,7 +176,9 @@ fetchData("./assets/titles.json")
           "marker-options-id": marker.id,
           "day": marker.day,
           "image": marker.img.src,
-          "description": marker.description
+          "description": marker.description,
+          "place": marker.place,
+          "title":marker.title
         }
 
         )
@@ -186,7 +188,7 @@ fetchData("./assets/titles.json")
   })
   .then((data) => {
     featureGroups.map((marker) => {
-      marker.addTo(map).bindPopup(`<div class="customPopup"><figure><img src="${marker.options.image}"><figcaption>${marker.options.day}</figcaption></figure><div>${marker.options.description}</div></div>`)
+      marker.addTo(map).bindPopup(`<div class="customPopup"><h4>${marker.options.place + " / " + marker.options.title}</h4><figure><img src="${marker.options.image}"><h5>${marker.options.day}</h5></figure><div>${marker.options.description}</div></div>`)
     });
   });
 

@@ -14,7 +14,8 @@
     "img": {
       "src": "https://images.trvl-media.com/lodging/5000000/4730000/4724300/4724240/0c2f9285.jpg?impolicy=resizecrop&rw=1200&ra=fit"
     },
-    "type": "startPoint"
+    "type": "startPoint",
+    "place":"Ovacık"
   },
   {
     "id": 1,
@@ -30,7 +31,8 @@
     "title": "Onur Motel Faralya",
     "img": {
       "src": "https://lh3.googleusercontent.com/proxy/a22QEMhIkvr_S3XNqjyduAm5VBgYwc9VlHcQxJT0GnvpgN456Iy99f1KSXOoLU7YsvB4wKQzA1yjiPJpta-gyD8x1cfNguqe3CXQ0IZ-duHyyh3c7vr-Yv-cGg8"
-    }
+    },
+    "place":"Hisar / Faralya"
   },
   {
     "id": 2,
@@ -46,7 +48,8 @@
     "title": "Kabak Mamma's",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipOsA-csf9Ek2RcAomDOvUe-VwvIxPwJSucNbjq2=w408-h306-k-no"
-    }
+    },
+    "place":"Kabak"
   },
   {
     "id": "3",
@@ -63,7 +66,7 @@
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipPzNexoauzBiXYAsK19DW1ApzobwjK7gilyxH6Y=w408-h544-k-no"
     },
-    "type":"finishPoint"
+    "place":"Alınca"
   },
   {
     "id": 4,
@@ -79,7 +82,9 @@
     "title": "Fatma Pansiyon",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipMZ5s-l_x2rByb7BGbTpxj6xwHghAp_1NjQEwDv=w408-h306-k-no"
-    }
+    },
+    "place":"Bel"
+
   },
   {
     "id": 5,
@@ -95,7 +100,9 @@
     "title": "Likya Park Orman",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipMCTGy5RKliiuOqwK5PYXLiyq2bL8sY7ZYOHJGZ=w408-h453-k-no"
-    }
+    },
+    "place":"Gavurağılı"
+
   },
   {
     "id": 6,
@@ -111,7 +118,9 @@
     "title": "Likya Garden Life",
     "img": {
       "src": "https://lh5.googleusercontent.com/p/AF1QipOhUM6PEWGGntS78j89zilJ5jILJome02Q78O_b=w408-h272-k-no"
-    }
+    },
+    "place":"Karadere"
+
   },
   {
     "id": "7",
@@ -127,6 +136,8 @@
     "title": "Letoon Antique Hotel",
     "img": {
       "src": "https://d3m404n3ahyqc3.cloudfront.net/images/product/1/2/638113052111170000/2/1/25229/letoon_antique_hotel.jpg"
-    }
+    },
+    "place":"Kumluova"
+
   }
 ]

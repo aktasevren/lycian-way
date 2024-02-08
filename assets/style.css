@@ -8,25 +8,7 @@
   margin: 0;
 }
 
-html {
-  height: 100%;
-}
 
-body,
-html,
-#map {
-  width: 100%;
-  height: 600px;
-}
-
-body {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
-  background-color: #f1f1f1;
-}
 
 svg:not(:root) {
   overflow: hidden;
@@ -159,25 +141,13 @@ hr.new4 {
 
 
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body,
 html,
 #map {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  width: 90%;
+  height: 90%;
+  margin: auto;
   padding: 0;
+  
 }
 
 body {
@@ -190,8 +160,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   min-height: 100%;
   padding: 0;
-  margin: 0;
-  background-color: #fff;
+  margin: 0;  
 }
 
 img {
