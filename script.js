@@ -66,7 +66,7 @@ fetchData("./assets/routes/all.json")
     }).addTo(map);
     return data;
   })
-  fetchData("./assets/routes/day9.json")
+fetchData("./assets/routes/day9.json")
   .then((data) => {
     L.polyline(data, {
       color: "#0BDA51",
@@ -167,7 +167,7 @@ fetchData("./assets/titles.json")
     data.map((marker) => {
       featureGroups.push(
         L.marker(marker.coords, {
-          icon: marker.type == "startPoint" ? start :  L.divIcon({
+          icon: marker.type == "startPoint" ? start : L.divIcon({
             className: "waypoint-icon",
             html: `${marker.id}`,
             iconSize: L.point(30, 30),
@@ -178,7 +178,10 @@ fetchData("./assets/titles.json")
           "image": marker.img.src,
           "description": marker.description,
           "place": marker.place,
-          "title":marker.title
+          "title": marker.title,
+          "totaltime": marker.totaltime,
+          "walktime": marker.walktime,
+          "distance": marker.distance
         }
 
         )
@@ -188,7 +191,7 @@ fetchData("./assets/titles.json")
   })
   .then((data) => {
     featureGroups.map((marker) => {
-      marker.addTo(map).bindPopup(`<div class="customPopup"><h4>${marker.options.place + " / " + marker.options.title}</h4><figure><img src="${marker.options.image}"><h5>${marker.options.day}</h5></figure><div>${marker.options.description}</div></div>`)
+      marker.addTo(map).bindPopup(`<div class="customPopup"><h4>${marker.options.place + " / " + marker.options.title}</h4><figure><img src="${marker.options.image}"><h5>${marker.options.day}</h5></figure><div>${marker.options.description}</div><div><h5>Yürünen Mesafe : ${marker.options.distance}</h5><h5>Toplam Zaman : ${marker.options.totaltime}</h5></div></div>`)
     });
   });
 
