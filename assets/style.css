@@ -64,12 +64,11 @@ svg:not(:root) {
   justify-content: center;
   align-items: center;
   line-height: 1;
-  color: #fff;
-  font-size: 12px;
-  box-shadow: 0px 0px 10px white;
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
   border-radius: 100%;
-  border: 2px solid #fff;
-  background: grey;
+  border: 2px solid black;
 }
 
 .active-sidebar .leaflet-marker-icon,

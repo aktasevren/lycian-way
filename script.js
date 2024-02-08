@@ -77,7 +77,7 @@ fetchData("./assets/routes/all.json")
 fetchData("./assets/routes/day8.json")
   .then((data) => {
     L.polyline(data, {
-      color: "blue",
+      color: "orange",
       weight: 6,
     }).addTo(map);
     return data;
@@ -86,7 +86,7 @@ fetchData("./assets/routes/day8.json")
 fetchData("./assets/routes/day7.json")
   .then((data) => {
     L.polyline(data, {
-      color: "blue",
+      color: "orange",
       weight: 6,
     }).addTo(map);
     return data;
@@ -95,7 +95,7 @@ fetchData("./assets/routes/day7.json")
 fetchData("./assets/routes/day6.json")
   .then((data) => {
     L.polyline(data, {
-      color: "blue",
+      color: "orange",
       weight: 6,
     }).addTo(map);
     return data;
@@ -104,7 +104,7 @@ fetchData("./assets/routes/day6.json")
 fetchData("./assets/routes/day5.json")
   .then((data) => {
     L.polyline(data, {
-      color: "blue",
+      color: "orange",
       weight: 6,
     }).addTo(map);
     return data;
@@ -113,7 +113,7 @@ fetchData("./assets/routes/day5.json")
 fetchData("./assets/routes/day4.json")
   .then((data) => {
     L.polyline(data, {
-      color: "blue",
+      color: "orange",
       weight: 6,
     }).addTo(map);
     return data;
